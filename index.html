@@ -45,12 +45,29 @@
             <span class="text-primary">AIMEE</span>
             <span class="text-gray-800 dark:text-white ml-1">ISHIMWE</span>
         </a>
-        <nav>
-            <ul class="flex flex-wrap space-x-6">
+        <nav class="relative">
+            <!-- Desktop menu -->
+            <ul class="hidden md:flex flex-wrap space-x-6">
                 <li><a href="#home" class="hover:text-primary transition-colors font-medium">Home</a></li>
                 <li><a href="#about" class="hover:text-primary transition-colors font-medium">About</a></li>
                 <li><a href="#contact" class="hover:text-primary transition-colors font-medium">Contact</a></li>
             </ul>
+            
+            <!-- Mobile hamburger button -->
+            <button class="md:hidden flex flex-col space-y-1" id="mobile-menu-button">
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+            </button>
+            
+            <!-- Mobile menu (hidden by default) -->
+            <div class="hidden absolute top-full right-0 bg-gray-800 p-4 rounded-md shadow-lg mt-2" id="mobile-menu">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="#home" class="hover:text-primary transition-colors font-medium">Home</a></li>
+                    <li><a href="#about" class="hover:text-primary transition-colors font-medium">About</a></li>
+                    <li><a href="#contact" class="hover:text-primary transition-colors font-medium">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -244,6 +261,12 @@
     </footer>
 
     <script>
+        
+        //Add this JavaScript to toggle the mobile menu
+
+document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
         // Random motivational quotes
         const quotes = [
             "Your passion is your power—keep creating!",
