@@ -1,56 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="[scroll-behavior:smooth]">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal portifolio</title>
     
-    
     <script src="https://cdn.tailwindcss.com"></script> 
     
     <!-- <link> for Tailwind 1.x: <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">  this one is not supporting 
      animation, transition and dark-->
-    
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        .bg-primary {
-            background-color: #F5A623;
-        }
-        .text-primary {
-            color: #F5A623;
-        }
-        .border-primary {
-            border-color: #F5A623;
-        }
-        .hover-primary:hover {
-            background-color: #e69520;
-        }
-        section {
-            scroll-margin-top: 5rem;
-        }
-        .transition-all {
-            transition: all 0.3s ease;
-        }
-    </style>
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans">
     <!-- Navigation Bar -->
     <header class="bg-white dark:bg-gray-900 shadow-md p-4 flex justify-between items-center fixed top-0 w-full z-10">
         <a href="#home" class="text-2xl font-bold flex items-center">
-            <span class="text-primary">AIMEE</span>
+            <span class="text-[#F5A623]">AIMEE</span>
             <span class="text-gray-800 dark:text-white ml-1">ISHIMWE</span>
         </a>
         <nav class="relative">
             <!-- Desktop menu -->
             <ul class="hidden md:flex flex-wrap space-x-6">
-                <li><a href="#home" class="hover:text-primary transition-colors font-medium">Home</a></li>
-                <li><a href="#about" class="hover:text-primary transition-colors font-medium">About</a></li>
-                <li><a href="#contact" class="hover:text-primary transition-colors font-medium">Contact</a></li>
+                <li><a href="#home" class="hover:text-[#F5A623] transition-colors font-medium">Home</a></li>
+                <li><a href="#about" class="hover:text-[#F5A623] transition-colors font-medium">About</a></li>
+                <li><a href="#contact" class="hover:text-[#F5A623] transition-colors font-medium">Contact</a></li>
             </ul>
             
             <!-- Mobile hamburger button -->
@@ -63,9 +35,9 @@
             <!-- Mobile menu (hidden by default) -->
             <div class="hidden absolute top-full right-0 bg-gray-800 p-4 rounded-md shadow-lg mt-2" id="mobile-menu">
                 <ul class="flex flex-col space-y-3">
-                    <li><a href="#home" class="hover:text-primary transition-colors font-medium">Home</a></li>
-                    <li><a href="#about" class="hover:text-primary transition-colors font-medium">About</a></li>
-                    <li><a href="#contact" class="hover:text-primary transition-colors font-medium">Contact</a></li>
+                    <li><a href="#home" class="hover:text-[#F5A623] transition-colors font-medium">Home</a></li>
+                    <li><a href="#about" class="hover:text-[#F5A623] transition-colors font-medium">About</a></li>
+                    <li><a href="#contact" class="hover:text-[#F5A623] transition-colors font-medium">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -74,21 +46,21 @@
     <!-- Main Content -->
     <main class="pt-20">
         <!-- Home Section -->
-        <section id="home" class="min-h-screen flex items-center justify-center p-6 bg-gray-50 dark:bg-gray-800">
+        <section id="home" class="min-h-screen flex items-center justify-center p-6 bg-gray-50 dark:bg-gray-800 [scroll-margin-top:5rem]">
             <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-6 md:gap-12 lg:gap-12">
                 <!-- Home Content -->
                 <article class="md:w-3/5 text-center md:text-left mx-auto max-w-md md:max-w-none">
-                    <p class="text-primary text-sm font-semibold tracking-wider uppercase">Hello, I'm</p>
+                    <p class="text-[#F5A623] text-sm font-semibold tracking-wider uppercase">Hello, I'm</p>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 dark:text-white mt-2">AIMEE ISHIMWE</h1>
-                    <h2 class="text-xl md:text-2xl font-semibold text-primary mt-2">Web Developer & UI/UX Designer</h2>
+                    <h2 class="text-xl md:text-2xl font-semibold text-[#F5A623] mt-2">Web Developer & UI/UX Designer</h2>
                     <p class="text-gray-600 dark:text-gray-300 mt-6 text-lg leading-relaxed max-w-xl">
                         I specialize in creating impactful digital experiences through user-centered design and modern development practices. With expertise in both front-end development and UI/UX design, I deliver solutions that engage users and drive business results.
                     </p>
                     <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
-                        <a href="#about" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover-primary transition-all transform hover:scale-105 shadow-md">
+                        <a href="#about" class="bg-[#F5A623] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#e69520] transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
                              About Me
                         </a>
-                        <a href="#contact" class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-all transform hover:scale-105">
+                        <a href="#contact" class="border-2 border-[#F5A623] text-[#F5A623] px-8 py-3 rounded-lg font-medium hover:bg-[#F5A623] hover:text-white transition duration-300 ease-in-out transform hover:scale-105">
                             Contact Me
                         </a>
                     </div>
@@ -98,7 +70,7 @@
                 <figure class="md:w-2/5 flex flex-col items-center">
                     <div class="flex justify-center">
                         <div class="relative">
-                            <div class="absolute inset-0 bg-primary rounded-full transform -translate-x-4 translate-y-4 -z-10"></div>
+                            <div class="absolute inset-0 bg-[#F5A623] rounded-full transform -translate-x-4 translate-y-4 -z-10"></div>
                             <img src="img3.jpeg" alt="Aimee Ishimwe - Professional Portrait" class="w-56 h-56 md:w-80 md:h-80 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-xl z-10">
                         </div>
                     </div>
@@ -108,17 +80,17 @@
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="min-h-screen flex items-center justify-center p-6 bg-gray-100 dark:bg-gray-900">
+        <section id="about" class="min-h-screen flex items-center justify-center p-6 bg-gray-100 dark:bg-gray-900 [scroll-margin-top:5rem]">
             <div class="max-w-5xl mx-auto text-center">
                 <!-- Heading -->
                 <h2 class="text-4xl font-bold text-black dark:text-white">About Me</h2>
-                <p class="text-lg text-custom-orange mt-2">Designer, Developer, Creative Thinker</p>
+                <p class="text-lg text-[#F5A623] mt-2">Designer, Developer, Creative Thinker</p>
 
                 <div class="mt-8 flex flex-col md:flex-row items-center gap-6 md:gap-12 lg:gap-12">
                     <!-- Left Side: Illustration Placeholder and Icons -->
                     <div class="md:w-1/2 flex flex-col items-center">
                         <figure>
-                            <img src="htm1.png" alt="Developer at Desk" class="w-3/4 sm:w-full max-w-md animate-pulse ">
+                            <img src="htm1.png" alt="Developer at Desk" class="w-3/4 sm:w-full max-w-md animate-pulse">
                             <figcaption class="mt-2 text-sm text-gray-600 dark:text-gray-400">Illustration of a Developer at Work</figcaption>
                         </figure>
                         <div class="flex flex-wrap justify-center space-x-4 mt-4">
@@ -138,19 +110,19 @@
                                 With a keen eye for detail and a love for problem-solving, I continuously strive to learn and improve my skills. I’m excited to collaborate on new and innovative ideas to life.
                             </p>
                         </article>
-                        <button id="toggleButton" class="inline-block mt-6 bg-primary text-white px-6 py-3 rounded-lg font-medium hover-primary transition-all transform hover:scale-105 animate-bounce">
+                        <button id="toggleButton" class="inline-block mt-6 bg-[#F5A623] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#e69520] transition duration-300 ease-in-out transform hover:scale-105 animate-bounce">
                             <span id="buttonText">More About Me</span>
                         </button>
                         <!-- Add Toggleable Content -->
                         <div id="moreInfo" class="hidden mt-6 transition-opacity duration-300 opacity-0 text-left">
-                            <h4 class="text-lg font-semibold text-primary">Hobbies & Interests</h4>
+                            <h4 class="text-lg font-semibold text-[#F5A623]">Hobbies & Interests</h4>
                             <ul class="mt-4 text-gray-600 dark:text-gray-400 list-disc list-outside ml-4">
                                 <li>Exploring new UI/UX design trends</li>
                                 <li>Photography and visual storytelling</li>
                                 <li>Learning about accessibility in web development</li>
                                 <li>Traveling and discovering new cultures</li>
                             </ul>
-                            <h4 class="text-lg font-semibold text-primary mt-6">Additional Skills</h4>
+                            <h4 class="text-lg font-semibold text-[#F5A623] mt-6">Additional Skills</h4>
                             <ul class="mt-4 text-gray-600 dark:text-gray-400 list-disc list-outside ml-4">
                                 <li>Prototyping with Figma</li>
                                 <li>Responsive design with Tailwind CSS</li>
@@ -174,12 +146,12 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 flex items-center justify-center p-6 bg-white dark:bg-gray-900">
+        <section id="contact" class="py-20 flex items-center justify-center p-6 bg-white dark:bg-gray-900 [scroll-margin-top:5rem]">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl font-bold text-gray-800 dark:text-white inline-block relative">
                         Contact Me
-                        <span class="absolute bottom-0 left-0 w-full h-1 bg-primary"></span>
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-[#F5A623]"></span>
                     </h2>
                     <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-xl mx-auto">
                         Interested in working together? I'd love to hear from you!
@@ -194,22 +166,22 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2 font-medium">Full Name</label>
-                                    <input type="text" id="name" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Aimee Ishimwe">
+                                    <input type="text" id="name" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]" placeholder="Aimee Ishimwe">
                                 </div>
                                 <div>
                                     <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2 font-medium">Email Address</label>
-                                    <input type="email" id="email" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary" placeholder="aimeishimwe25@gmail.com">
+                                    <input type="email" id="email" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]" placeholder="aimeishimwe25@gmail.com">
                                 </div>
                             </div>
                             <div>
                                 <label for="subject" class="block text-gray-700 dark:text-gray-300 mb-2 font-medium">Subject</label>
-                                <input type="text" id="subject" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary" placeholder="your project ">
+                                <input type="text" id="subject" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]" placeholder="your project ">
                             </div>
                             <div>
                                 <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2 font-medium">Message</label>
-                                <textarea id="message" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary" rows="5" placeholder="Tell me about your project ..."></textarea>
+                                <textarea id="message" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]" rows="5" placeholder="Tell me about your project ..."></textarea>
                             </div>
-                            <button type="submit" class="w-full md:w-auto bg-primary text-white px-8 py-3 rounded-lg font-medium hover-primary transition-all transform hover:scale-105 shadow-md">
+                            <button type="submit" class="w-full md:w-auto bg-[#F5A623] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#e69520] transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
                                 Send Message
                             </button>
                         </form>
@@ -221,16 +193,16 @@
                             <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">Contact Information</h3>
                             <address class="space-y-6 not-italic">
                                 <div class="flex items-start">
-                                    <div class="bg-primary p-3 rounded-full text-white mr-4">
+                                    <div class="bg-[#F5A623] p-3 rounded-full text-white mr-4">
                                         <i class="fas fa-envelope"></i>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-gray-800 dark:text-white">Email</h4>
-                                        <a href="mailto:aimeishimwe25@example.com" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">aimeishimwe25@gmail.com</a>
+                                        <a href="mailto:aimeishimwe25@example.com" class="text-gray-600 dark:text-gray-300 hover:text-[#F5A623] transition-colors">aimeishimwe25@gmail.com</a>
                                     </div>
                                 </div>
                                 <div class="flex items-start">
-                                    <div class="bg-primary p-3 rounded-full text-white mr-4">
+                                    <div class="bg-[#F5A623] p-3 rounded-full text-white mr-4">
                                         <i class="fas fa-map-marker-alt"></i>
                                     </div>
                                     <div>
@@ -239,7 +211,7 @@
                                     </div>
                                 </div>
                                 <div class="flex items-start">
-                                    <div class="bg-primary p-3 rounded-full text-white mr-4">
+                                    <div class="bg-[#F5A623] p-3 rounded-full text-white mr-4">
                                         <i class="fas fa-clock"></i>
                                     </div>
                                     <div>
